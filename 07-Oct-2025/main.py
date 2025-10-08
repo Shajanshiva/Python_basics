@@ -46,3 +46,4 @@ print( a + b , "points")
 
 
 # task 4
+a = 1
