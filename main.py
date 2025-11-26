@@ -182,7 +182,7 @@ def palindrom(word):
                 temp = word[i:j + 1]
                 if temp == temp[::-1]:
                     if len(temp) > 1:
-                    print(temp)
+                        print(temp)
                 
 palindrom("racecar")
         
