@@ -186,3 +186,38 @@ def palindrom(word):
                 
 palindrom("racecar")
         
+
+#task 12
+def replace_vowel(word):
+    a = "aeiou"
+    b = ""
+    if len(word) == 0:
+        print("Invalid input")
+    else:
+        for i in range(0, len(word), 1):
+            if word[i] in a and word[i+1] in a:
+                b += word[i]+"*"
+            else:
+                b += word[i]
+        print(b)
+        
+replace_vowel("beautiful")
+
+
+#task 13
+def reverse_string(word):
+    a = word.split(" ")
+    rev = ""
+    result = ""
+    for i in range(0,len(a),+1):
+        if len(a[i]) > 3:
+            temp =  a[i]
+            for j in range(len(temp)-1,-1,-1):
+                result = result + temp[j]
+            rev = rev + " " + result
+            result = ""
+        else:
+            rev = rev + " " + a[i]
+    print(rev)
+reverse_string("I love writing python code")
+reverse_string("ever try ever fail no matter")
